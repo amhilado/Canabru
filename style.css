@@ -1,0 +1,35 @@
+html {
+    background: black;
+}
+
+h1, h2, h3, p, a {
+    font-family: 'Raleway';
+}
+
+h1, h2, h3 {
+    color: white;
+    text-align: center;
+}
+
+.navBar {
+    width: 100%;
+    height: 30px;
+    z-index: 1;
+    position: relative;
+    top: 40px;
+    display: flex;
+    background: rgba(104, 104, 104, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.navBar > a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 150px;
+}
+
+#navLogo {
+    height: 100px;
+    width: 100px;
+}

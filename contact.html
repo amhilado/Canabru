@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Canabru - About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6016060e75.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+
+</head>
+
+<body>
+
+    <div class="main container-fluid">
+        <nav class="navBar">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <div>
+                <img id="navLogo" src="images/Canabru Logo White.png">
+            </div>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div id="photocont">
+            <h1 class="textcenter" style="color: white">Contact</h1>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6-lg" id="map">
+                <script>
+                    function initMap() {
+                        // The location of Canabru
+                        var canabru = { lat: 33.9895968, lng: -117.7060799 };
+                        // The map, centered at Canabru
+                        var map = new google.maps.Map(
+                            document.getElementById('map'), { zoom: 15, center: canabru });
+                        // The marker, positioned at Canabru
+                        var marker = new google.maps.Marker({ position: canabru, map: map });
+                    }
+                </script>
+                <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfmZlYqXqo2fVGx3JG-WR1fC3vvcGZAkk&callback=initMap">
+                    </script>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
