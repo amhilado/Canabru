@@ -23,6 +23,11 @@
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
+.social {
+    background: black;
+    padding: 3% 0;
+}
+
 #photocont {
     width: 100%;
     height: 100%;
@@ -35,7 +40,7 @@
 #contLogo {
     position: relative;
     width: 100%;
-    padding: 0 20%;
+    padding: 0 20% 0 17.6%;
     opacity: 0.15;
 }
 
