@@ -2,13 +2,36 @@ html {
     background: black;
 }
 
-h1, h2, h3, p, a {
+h1, h2, h3, p, a, li{
+    color: white;
     font-family: 'Raleway';
 }
 
 h1, h2, h3 {
-    color: white;
     text-align: center;
+}
+
+h1, h2 {
+    font-weight: bolder;
+}
+
+h2, h3 {
+    text-decoration: underline;
+}
+
+a {
+    font-size: 1.2rem;
+}
+
+i {
+    padding: 0 2%;
+    font-size: 3rem;
+}
+
+ul > li {
+    font-size: 1.2rem;
+    padding: 15px 0 35px 35px;
+    list-style-type: none;
 }
 
 .navBar {
