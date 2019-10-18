@@ -34,8 +34,22 @@
 }
 
 #aboutText {
-    transform: translate(50%,0);
-    width: 50%;
-    color: white;
-    text-align: center;
+    font-size: 1.2rem;
+}
+
+#aboutImage {
+    width: 100%;
+}
+
+.social {
+    background: black;
+    padding: 3% 0;
+}
+
+@media screen and (max-width: 600px) {
+    #aboutImage {
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
 }

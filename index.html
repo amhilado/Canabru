@@ -13,35 +13,42 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="home.css">
+    <script src="functions.js"></script>
 
 </head>
 
 <body>
 
     <div class="main container-fluid">
-        <nav class="navBar">
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <div>
-                <img id="navLogo" src="images/Canabru Logo White.png">
-            </div>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div id="dropdown">
+            <!-- <button onclick="myFunction()" class="dropBtn">
+                <i class="fas fa-bars"></i>
+            </button> -->
+            <nav id="navDropdown" class="navBar">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <div>
+                    <a href="index.html"><img id="navLogo" src="images/Canabru Logo White.png"></a>
+                </div>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
         <div id="photocont">
             <img id="contLogo" src="images/Canabru Logo Black.png">
         </div>
         <div class="textcenter">
-            <p style="color: white">Try one of our Trademark Drinks</p>
+            <p style="margin: 0">Try one of our Trademark Drinks</p>
+            <p id="homeHeader">The Zebra Latte</p>
         </div>
     </div>
 
     <div class="info container-fluid">
         <div class="row justify-content-center">
-            <h1 style="color:white;">Specialty coffee, tea, and homemade fudge</h1>
+            <p style="font-size: 3rem; font-weight: 600; margin: 0; text-align: center;">Specialty coffee, tea, and homemade fudge</p>
         </div>
         <div class="row justify-content-center">
-            <div class="col-lg-5 text-center">
+            <div class="col-xl-5 col-lg-7 col-md-8 col-sm-8 text-center">
                 <p id="subHeading">Anyone can serve coffee, but we strive to make your special day just
                     a bit more special. The combination of specialty coffee, home made
                     syrups, and only the best service to you and your loved ones is
@@ -49,13 +56,13 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 col-sm-4">
                 <img id="homeImage" src="images/Product1.jpg">
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 col-sm-4">
                 <img id="homeImage" src="images/Product2.jpg">
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 col-sm-4">
                 <img id="homeImage" src="images/Product3.jpg">
             </div>
         </div>
@@ -64,7 +71,7 @@
     <div class="social container-fluid">
         <div class="row justify-content-center">
             <div class="col-lg-6">
-                <h1>Keep up with us on social media!</h1>
+                <p style="font-size: 2rem; text-align: center;">Keep up with us on social media!</p>
             </div>
         </div>
         <div class="row justify-content-center">

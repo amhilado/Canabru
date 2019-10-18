@@ -18,7 +18,7 @@
 .textcenter {
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
@@ -26,6 +26,12 @@
 .social {
     background: black;
     padding: 3% 0;
+}
+
+#homeHeader {
+    font-weight: 600;
+    font-size: 4rem;
+    margin: 0;
 }
 
 #photocont {
@@ -45,10 +51,34 @@
 }
 
 #subHeading {
-    color: white;
+    font-size: 1.1rem;
     line-height: 50px;
 }
 
 #homeImage {
     width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    #contLogo {
+        padding: 8% 17% 0 14%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #contLogo {
+        padding: 10% 10% 0 7%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #contLogo {
+        padding: 20% 5% 0 3%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #contLogo {
+        padding: 35% 0% 0 0%;
+    }
 }

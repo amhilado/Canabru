@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Canabru - About</title>
+    <title>Canabru - Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
@@ -23,7 +23,7 @@
             <a href="index.html">Home</a>
             <a href="menu.html">Menu</a>
             <div>
-                <img id="navLogo" src="images/Canabru Logo White.png">
+                <a href="index.html"><img id="navLogo" src="images/Canabru Logo White.png"></a>
             </div>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
@@ -34,22 +34,21 @@
     </div>
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-6-lg" id="map">
-                <script>
-                    function initMap() {
-                        // The location of Canabru
-                        var canabru = { lat: 33.9895968, lng: -117.7060799 };
-                        // The map, centered at Canabru
-                        var map = new google.maps.Map(
-                            document.getElementById('map'), { zoom: 15, center: canabru });
-                        // The marker, positioned at Canabru
-                        var marker = new google.maps.Marker({ position: canabru, map: map });
-                    }
-                </script>
-                <script async defer
-                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfmZlYqXqo2fVGx3JG-WR1fC3vvcGZAkk&callback=initMap">
-                    </script>
+        <div class="mapContainer row justify-content-center">
+            <div class="col-xl-6 col-lg-8 col-md-9 col-sm-12 text-center">
+                <img id="map" src="images/Map.png">
+            </div>
+            <div id="contact" class="col-xl-6 col-lg-8 col-md-9 col-sm-10">
+                <p id="contactTitle">Address:</p>
+                <p id="contactInfo">14521 Ramona Ave.</p>
+                <p id="contactInfo">Chino, CA 91710</p>
+                <br>
+                <p id="contactTitle">Phone:</p>
+                <p id="contactInfo">1 (909) 271-2262</p>
+                <br>
+                <p id="contactTitle">Store Hours:</p>
+                <p id="contactInfo">Mon-Fri: 6AM-10PM</p>
+                <p id="contactInfo">Sat-Sun: 7AM-10PM</p>
             </div>
         </div>
     </div>
