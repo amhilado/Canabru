@@ -41,30 +41,15 @@
     width: 100%;
 }
 
-@media screen and (max-width: 1200px) {
-    #aboutText {
-        transform: translate(33%,0);
-        width: 60%;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    #aboutText {
-        transform: translate(33%,0);
-        width: 60%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #aboutText {
-        transform: translate(17%,0);
-        width: 75%;
-    }
+.social {
+    background: black;
+    padding: 3% 0;
 }
 
 @media screen and (max-width: 600px) {
-    #aboutText {
-        transform: translate(10% 0);
-        width: 75%;
+    #aboutImage {
+        width: 70%;
+        display: block;
+        margin: auto;
     }
 }
