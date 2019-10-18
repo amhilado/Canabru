@@ -34,8 +34,37 @@
 }
 
 #aboutText {
-    transform: translate(50%,0);
-    width: 50%;
-    color: white;
-    text-align: center;
+    font-size: 1.2rem;
+}
+
+#aboutImage {
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    #aboutText {
+        transform: translate(33%,0);
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #aboutText {
+        transform: translate(33%,0);
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #aboutText {
+        transform: translate(17%,0);
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #aboutText {
+        transform: translate(10% 0);
+        width: 75%;
+    }
 }

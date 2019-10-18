@@ -1,3 +1,9 @@
+ul > li {
+    font-size: 1.2rem;
+    padding: 15px 0 10px 35px;
+    list-style-type: none;
+}
+
 .main {
     background: rgb(143, 143, 143);
     position: relative;
@@ -33,11 +39,53 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgb(0, 0, 0)), url(images/Cafe.jpg);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgb(0, 0, 0)), url(images/Menu.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #trademarks {
     border-right: solid #FFFFFF;
+}
+
+#divider {
+    height: 2px;
+    background-color: white;
+    width: 700px;
+    display: none;
+    margin-top: 5%;
+}
+
+@media screen and (max-width: 1200px) {
+    ul > li {
+        padding: 15px 20px 10px 10px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    ul > li {
+        padding: 15px 25px 10px 5px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #divider {
+        display: block;
+    }
+
+    #trademarks {
+        border-right: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #divider {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #divider {
+        width: 400px;
+    }
 }

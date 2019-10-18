@@ -17,23 +17,39 @@
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
+.mapContainer {
+    background: black;
+}
+
 #photocont {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgb(0, 0, 0)), url(images/Cafe.jpg);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgb(0, 0, 0)), url(images/Contact.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #map {
-    width: 50%;
-    height: 400px;
-    background-color: gray;
+    padding: 5%;
+    width: 600px;
+    height: 600px;
 }
 
 #contact {
+    padding: 5%;
     width: 100%;
-    height: 400px;
-    background-color: black;
+    height: 100%;
+}
+
+#contactTitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-decoration: underline;
+    padding: 0;
+    margin: 0;
+}
+
+#contactInfo {
+    font-size: 1.2rem;
 }
