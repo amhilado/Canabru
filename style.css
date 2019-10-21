@@ -40,7 +40,7 @@ i {
     font-size: 2.5rem;
 }
 
-.navBar {
+.navigation-bar {
     width: 100%;
     height: 30px;
     z-index: 1;
@@ -49,13 +49,32 @@ i {
     display: flex;
     background: rgba(104, 104, 104, 0.5);
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
-.navBar > a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
-    margin: 0 150px;
+/** Navigation Bar - Navigation Links **/
+#navLinks {
+    display: flex;
+    margin-top: -48px;
+    height: 50px;
+    width: 100%;
+}
+  
+#navLinks ul {
+    width: 100%;
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+#navLinks li {
+    display: inline;
+    padding: 0 110px;
+}
+
+#navLinks a {
+    font-size: 1.3rem;
 }
 
 #navLogo {
@@ -63,45 +82,86 @@ i {
     width: 100px;
 }
 
-
-#dropdown {
-    width: 100%;
-    text-align: left;
-    position: relative;
-    display: inline-block;
+/** Hamburger Bars Menu **/
+#hamburger {
+    font-size: 30px;
+    text-align: right;
+    display: none;
+    float: right;
 }
-
-/* .dropBtn {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
+  
+#hamburger button {
+    background: none;
     border: none;
-    cursor: pointer;
+    padding: 0;
 }
-
+  
+.fa-bars {
+    color: white;
+}
+  
+.dropdownContent {
+    display: none;
+}
+  
 .show {
     display: block;
-} */
-
-@media screen and (max-width: 1270px) {
-    .navBar > a {
-        margin: 0 100px;
+}
+  
+/** Media Queries for Nav Bar and Content **/
+@media screen and (max-width: 1461px) {
+    #navLinks li {
+        padding: 0 90px;
     }
 }
 
-@media screen and (max-width: 992px) {
-    .navBar > a {
-        margin: 0 65px;
+@media screen and (max-width: 1265px) {
+    #navLinks li {
+        padding: 0 70px;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .navBar > a {
-        display: none;
+@media screen and (max-width: 1065px) {
+    #navLinks li {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 865px) {
+    #navLinks li {
+        padding: 0 30px;
     }
 
-    #hamburger > button {
-        display: block;
+    #navLinks a {
+        font-size: 1.2rem;
+    }
+
+    /* #navLinks {
+      height: 0;
+      display: none;
+    }
+  
+    #hamburger {
+      padding-right: 20px;
+      padding-top: 5px;
+      display: block;
+    }
+  
+    .dropdownContent li {
+      list-style: none;
+      display: block;
+      width: 100%;
+      height: auto;
+      float: left;
+    }
+  
+    .dropdownContent a {
+      margin-right: 0px;
+    } */
+}
+
+@media screen and (max-width: 645px) {
+    #navLinks li {
+        padding: 0 15px;
     }
 }

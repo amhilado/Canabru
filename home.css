@@ -28,6 +28,11 @@
     padding: 3% 0;
 }
 
+#homeHeaderTop {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
 #homeHeader {
     font-weight: 600;
     font-size: 4rem;
@@ -69,11 +74,29 @@
     #contLogo {
         padding: 10% 10% 0 7%;
     }
+
+    #homeHeaderTop {
+        font-size: 1.1rem;
+    }
+
+    #homeHeader {
+        font-size: 3rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
     #contLogo {
         padding: 20% 5% 0 3%;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    #homeHeaderTop {
+        font-size: 1rem;
+    }
+
+    #homeHeader {
+        font-size: 2.5rem;
     }
 }
 
