@@ -20,32 +20,62 @@
 <body>
 
     <div class="main container-fluid">
-        <div id="dropdown">
-            <!-- <button onclick="myFunction()" class="dropBtn">
-                <i class="fas fa-bars"></i>
-            </button> -->
-            <nav id="navDropdown" class="navBar">
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <div>
-                    <a href="index.html"><img id="navLogo" src="images/Canabru Logo White.png"></a>
+        <nav class="navigation-bar">
+            <div id="navLinks">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="menu.html">Menu</a>
+                    </li>
+                    <li>
+                        <a href="index.html"><img id="navLogo" src="images/Canabru Logo White.png"></a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="hamburger">
+                <button onclick="myFunction()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div id="dropdown" class="dropdownContent">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="menu.html">Menu</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
+            </div>
+        </nav>
+
         <div id="photocont">
             <img id="contLogo" src="images/Canabru Logo Black.png">
         </div>
         <div class="textcenter">
-            <p style="margin: 0">Try one of our Trademark Drinks</p>
+            <p id="homeHeaderTop">Try one of our Trademark Drinks</p>
             <p id="homeHeader">The Zebra Latte</p>
         </div>
     </div>
 
     <div class="info container-fluid">
         <div class="row justify-content-center">
-            <p style="font-size: 3rem; font-weight: 600; margin: 0; text-align: center;">Specialty coffee, tea, and homemade fudge</p>
+            <p style="font-size: 2.6rem; font-weight: 600; margin: 0; text-align: center;">Specialty coffee, tea, and
+                homemade fudge</p>
         </div>
         <div class="row justify-content-center">
             <div class="col-xl-5 col-lg-7 col-md-8 col-sm-8 text-center">

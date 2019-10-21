@@ -19,14 +19,47 @@
 <body>
 
     <div class="main container-fluid">
-        <nav class="navBar">
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <div>
-                <a href="index.html"><img id="navLogo" src="images/Canabru Logo White.png"></a>
+        <nav class="navigation-bar">
+            <div id="navLinks">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="menu.html">Menu</a>
+                    </li>
+                    <li>
+                        <a href="index.html"><img id="navLogo" src="images/Canabru Logo White.png"></a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <div id="hamburger">
+                <button onclick="myFunction()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div id="dropdown" class="dropdownContent">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="menu.html">Menu</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <div id="photocont">
             <h1 class="textcenter" style="color: white">Contact</h1>
